@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.rainbow-title {
+  display: block;
+  position: absolute;
+  color: black;
+  top: 2%;
+  left: 2%;
+  transform: (-50%, -50%);
+  z-index: 1;
+  font-size: 3rem;
+  
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: pink;
+}
+.game-portion {
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+}
+h2 {
+  font-size: 2rem;
+  margin: 10px;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 125px;
+  margin: 20px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 19px;
+  padding: 3px;
+}
+button:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+footer{
+  position: absolute;
+  bottom: 0%;
+}
+@media (max-width: 990px) {
+  .game-portion {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  button {
+    margin-top: 8px;
+  }
+}
